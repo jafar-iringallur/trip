@@ -4,18 +4,18 @@
 <div class="pagetitle">
     <div class="row">
         <div class="col-md-6 col-6">
-            <h1>Sub Users</h1>
+            <h1>Places</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active">Sub Users</li>
+                    <li class="breadcrumb-item active">Places</li>
                 </ol>
             </nav>
         </div>
         <div class="col-md-6 col-6 text-right pt-2">
 
             <button class="btn btn-sm btn-primary" onclick="showAddmodal()" style="float: right;"><i
-                    class="bi-plus-circle"></i> Add User</button>
+                    class="bi-plus-circle"></i> Add Place</button>
         </div>
     </div>
 </div><!-- End Page Title -->

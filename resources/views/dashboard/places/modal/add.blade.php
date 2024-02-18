@@ -92,4 +92,4 @@
 </script>
 
 <!-- Include the Google Maps JavaScript API script -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXmnsxqjaUs1Peo1FRlw4FcGZoKLevCHQ&libraries=places&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{config('services.google-map.api-key')}}&libraries=places&callback=initMap" async defer></script>
