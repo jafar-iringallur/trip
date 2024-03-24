@@ -37,6 +37,15 @@
 </div>
 
 <div class="container mt-5 p-3">
+    <table id="places" class="table" style="display: none">
+    <tr>
+      <th>Place</th>
+      <th>Distance</th>
+      <th>Duration</th>
+    </tr>
+    </table>
+</div>
+<div class="container mt-5 p-3">
     <div id="map" style="width: 100%; height: 100vh;"></div>
 </div>
 
@@ -145,6 +154,22 @@
     directionsService.route(request, function(result, status) {
         if (status == google.maps.DirectionsStatus.OK) {
             directionsRenderer.setDirections(result);
+            var route = result.routes[0];
+            $('#places').find("tr:gt(0)").remove();
+            for (var i = 0; i < route.legs.length; i++) {
+                var leg = route.legs[i];
+                var waypointIndex = route.waypoint_order[i];
+                if (data.data.waypoints[waypointIndex]) {
+                    waypointName = data.data.waypoints[waypointIndex].name;
+                }else{
+                  waypointName = data.data.destination.name;
+                }
+                // console.log('Waypoint ' + (i + 1) + ': ' + waypointName);
+                // console.log('Distance: ' + leg.distance.text);
+                // console.log('Duration: ' + leg.duration.text);
+                $('#places').append('<tr><td>' + waypointName + '</td><td>' + leg.distance.text + '</td><td>' + leg.duration.text + '</td></tr>');
+            }
+            $('#places').show();
         } else {
             console.error('Directions request failed due to ' + status);
         }

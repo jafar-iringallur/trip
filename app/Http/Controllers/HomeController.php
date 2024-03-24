@@ -41,6 +41,7 @@ class HomeController extends Controller
         $destination = [
             "lat" => $to->latitude,
             "long" => $to->longitude,
+            'name' => $to->name
         ];
         $apiKey = config('services.google-map.api-key');
 
@@ -60,6 +61,7 @@ class HomeController extends Controller
             ],
         ]);
         $data = json_decode($response->getBody(), true);
+        // \Log::debug($response->getBody());
         // dd( $data);
         $overview_polyline = $data['routes'][0]['overview_polyline']['points'];
         // dd( $overview_polyline);
