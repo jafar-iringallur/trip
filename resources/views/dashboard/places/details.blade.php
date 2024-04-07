@@ -67,6 +67,38 @@
                         <label for="inputNanme4" class="form-label">Entry Fees</label>
                         <input type="text" class="form-control"name="meta[entry_fee]" value="{{$data['entry_fee'] ?? ""}}" required>
                       </div>
+                      <div class="col-12">
+                        <label for="inputNanme4" class="form-label">Contact Information</label>
+                        <input type="text" class="form-control"name="meta[contact_information]" value="{{$data['contact_information'] ?? ""}}" required>
+                      </div>
+                      <div class="col-12">
+                        <label for="inputNanme4" class="form-label">Network Avaliablity</label>
+                        <input type="text" class="form-control"name="meta[network_avaliability]" value="{{$data['network_avaliability'] ?? ""}}" required>
+                      </div>
+                      <div class="col-12">
+                        <label for="inputNanme4" class="form-label">Restaurents/Hotels</label>
+                        <input type="text" class="form-control"name="meta[restaurents]" value="{{$data['restaurents'] ?? ""}}" required>
+                      </div>
+                      <div class="col-12">
+                        <label for="inputNanme4" class="form-label">Restrictions</label>
+                        <input type="text" class="form-control"name="meta[restrictions]" value="{{$data['restrictions'] ?? ""}}" required>
+                      </div>
+                      <div class="col-12">
+                        <label for="inputNanme4" class="form-label">Weather Condition</label>
+                        <input type="text" class="form-control"name="meta[weather_condition]" value="{{$data['weather_condition'] ?? ""}}" required>
+                      </div>
+                      <div class="col-12">
+                        <label for="inputNanme4" class="form-label">Nearest Fuel Station</label>
+                        <input type="text" class="form-control"name="meta[nearest_fuel_station]" value="{{$data['nearest_fuel_station'] ?? ""}}" required>
+                      </div>
+                      <div class="col-12">
+                        <label for="inputNanme4" class="form-label">Nearest Vehicle Workshop</label>
+                        <input type="text" class="form-control"name="meta[nearest_vehicle_workshop]" value="{{$data['nearest_vehicle_workshop'] ?? ""}}" required>
+                      </div>
+                      <div class="col-12">
+                        <label for="inputNanme4" class="form-label">Traffic Conditions</label>
+                        <input type="text" class="form-control"name="meta[traffic_conditions]" value="{{$data['traffic_conditions'] ?? ""}}" required>
+                      </div>
                      <div class="text-center">
                        <button type="submit" class="btn btn-primary" style="width: 90%">Update Details</button>
                       
