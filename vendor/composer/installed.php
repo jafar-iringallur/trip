@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '01d20177e8ddad9dc080632a5dfb7886ca664723',
+        'reference' => 'f0006d992fb3815fd83147bce4190e6c4f6f8e10',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -406,7 +406,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '01d20177e8ddad9dc080632a5dfb7886ca664723',
+            'reference' => 'f0006d992fb3815fd83147bce4190e6c4f6f8e10',
             'dev_requirement' => false,
         ),
         'laravel/pint' => array(
@@ -666,6 +666,15 @@
             'aliases' => array(),
             'reference' => '3767b2c56ce02d01e3491046f33466a1ae60a37f',
             'dev_requirement' => true,
+        ),
+        'plank/laravel-metable' => array(
+            'pretty_version' => '5.4.0',
+            'version' => '5.4.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../plank/laravel-metable',
+            'aliases' => array(),
+            'reference' => 'cd7f530fe1857fb6a406c198c5991a33ca5848a3',
+            'dev_requirement' => false,
         ),
         'psr/clock' => array(
             'pretty_version' => '1.0.0',

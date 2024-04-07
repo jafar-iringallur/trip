@@ -2,7 +2,8 @@
     <div class="d-flex align-items-center justify-content-between">
         <i class="bi bi-list toggle-sidebar-btn" style="padding-left: 0px;"></i>
         <a href="{{route('dashboard')}}" class="logo d-flex align-items-center">
-          <img src="{{ asset('dashboard/img/edulit_logo.png') }}" alt="" style="margin-left: 10px;">
+          Trip
+          {{-- <img src="{{ asset('dashboard/img/edulit_logo.png') }}" alt="" style="margin-left: 10px;"> --}}
           {{-- <span class="d-none d-lg-block">NiceAdmin</span> --}}
         </a>
       

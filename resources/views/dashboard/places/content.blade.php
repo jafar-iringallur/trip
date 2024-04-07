@@ -88,13 +88,15 @@
                 {
                     targets: [2],
                     render: function(data, type, row) {
-                        
+                        let edit_route = `{{route('places.details',':id')}}`;
+                        edit_route = edit_route.replace(':id', data);
                         return `<div class="dropdown">
                             <span class="" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer">
                               <i class="bi bi-three-dots-vertical"></i>
                             </span>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <a class="dropdown-item" href="#" onclick="deleteUser(` + data + `)"><i class="bi bi-trash3 pl-1"> </i> Delete</a>
+                                <a class="dropdown-item" href="${edit_route}"><i class="bi bi-pencil pl-1"> </i> Edit</a>
+                                <a class="dropdown-item" href="#" onclick="deletePlace(` + data + `)"><i class="bi bi-trash3 pl-1"> </i> Delete</a>
                           
                             </div>
                           </div>`;
@@ -204,7 +206,7 @@
         $('#add_place_modal').modal('show');
     }
 
-    function deleteUser(id) {
+    function deletePlace(id) {
         const swalWithBootstrapButtons = Swal.mixin({
             customClass: {
                 confirmButton: 'btn btn-success',

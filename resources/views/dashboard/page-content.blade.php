@@ -30,7 +30,7 @@
       </div>
     </div><!-- End Page Title -->
 
-    <section class="section dashboard">
+    <section class="section dashboard" style="display: none">
       <div class="row">
 
         <!-- Left side columns -->

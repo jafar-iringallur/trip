@@ -34,6 +34,9 @@ Route::prefix('admin')->middleware(['auth'])->group(function () {
         Route::get('/getData', [PlaceController::class, 'getData'])->name('places.getData');
         Route::post('/add', [PlaceController::class, 'add'])->name('places.add');
         Route::delete('/delete', [PlaceController::class, 'delete'])->name('places.delete');
+
+        Route::get('/details/{id}', [PlaceController::class, 'placeDetails'])->name('places.details');
+        Route::post('/update-details', [PlaceController::class, 'updateDetails'])->name('places.update.details');
     });
  
 });
